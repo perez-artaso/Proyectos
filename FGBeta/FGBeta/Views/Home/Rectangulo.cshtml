@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Rectangulo";
+    
+}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 60px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        .claseP {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 40px;
+        }
+
+        .background {
+            background-image: url(../../fondo.jpg);
+        }
+
+
+
+        .center {
+            text-align: center;
+        }
+
+        label {
+            font-size: x-large;
+            color: black;
+            font-weight: bolder;
+        }
+
+        input {
+            right: 100%;
+            left: 0%;
+            border-radius: 5px;
+            font-weight: bolder;
+            border: 0;
+            width: 100%;
+            color: brown;
+            font-size: xx-large;
+            height: 75px;
+            font-family: Tahoma;
+            position: relative;
+            background: #c399c3;
+        }
+    </style>
+</head>
+<body class="background">
+    <h1>Ingrese Los Datos De Su Rectángulo</h1>
+    <h2>Los rectángulos poseen un largo de base-tope y un alto de lados izquierdo y derecho</h2>
+    <h3>No deje ningún campo vacío y recuerde que la unidad utilizada es el centímetro</h3>
+    
+    <form action="~/Formas/Rectangulo" method="post">
+        <br /> <br />
+        <div class="center">
+            <input value="0" type="number" name="altura" id="altura" />
+            <label for="altura">ALTURA</label>
+        </div>
+        <div class="center">
+            <input style="left:-15px;" value="0" type="number" name="base" id="base" />
+            <label for="base">BASE</label>
+        </div>        
+
+        <br />
+        <br />
+
+        <div class="center">
+            <input style="left:-50px; background:#dddddd;" type="submit" value="CALCULAR" />
+        </div>
+    </form>
+    <hr />
+</body>
+</html>
